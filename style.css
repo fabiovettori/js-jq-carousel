@@ -1,0 +1,87 @@
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    width: 800px;
+    height: 600px;
+    position: relative;
+}
+
+.carousel .product-images, .carousel > span {
+    float: left;
+}
+
+.carousel .product-images {
+    width: calc(100% - 100px);
+    height: 100%;
+    background-color: red;
+}
+
+.carousel span {
+    display: inline-block;
+    text-align: center;
+    line-height: 600px;
+    width: 50px;
+    height: 100%;
+    font-size: 30px;
+    opacity: 0.2;
+    transition: opacity .5s ease-in-out;
+}
+
+.carousel span:hover {
+    opacity: 1;
+}
+
+.carousel img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel img.active {
+    display: inline-block;
+}
+
+.carousel .markers {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.carousel .markers span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid darkgrey;
+}
+
+.carousel .markers span.active {
+    border: 2px solid #515A5A;
+    background-color: #515A5A;
+}
+
+.carousel .markers span:not(:last-child) {
+    margin-right: 5px;
+}
