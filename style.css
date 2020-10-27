@@ -30,7 +30,6 @@ section {
 .carousel .product-images {
     width: calc(100% - 100px);
     height: 100%;
-    background-color: red;
 }
 
 .carousel > span {
@@ -85,7 +84,6 @@ section {
 .carousel .markers span:hover {
     opacity: 0.8;
 }
-
 
 .carousel .markers span.active {
     border: 2px solid #515A5A;
