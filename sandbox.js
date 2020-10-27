@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    // Effetto transizione freccia destra
     $('.right').click(function(){
         var img_active = $('img.active');
         img_active.removeClass('active');
@@ -15,6 +16,7 @@ $(document).ready(function(){
         }
     })
 
+    // Effetto transizione freccia sinistra
     $('.left').click(function(){
         var img_active = $('img.active');
         img_active.removeClass('active');
@@ -31,7 +33,7 @@ $(document).ready(function(){
         }
     })
 
-
+    // Effetto transizione sui markers
     $('.markers span').click(function(){
         var marker_active = $('span.active');
         marker_active.removeClass('active');

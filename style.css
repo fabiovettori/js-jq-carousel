@@ -17,6 +17,8 @@ section {
     align-items: center;
 }
 
+
+/* CAROUSEL */
 .carousel {
     width: 800px;
     height: 600px;
@@ -92,4 +94,8 @@ section {
 
 .carousel .markers span:not(:last-child) {
     margin-right: 5px;
+}
+
+h3 {
+    display: block;
 }
