@@ -78,6 +78,12 @@ section {
     border-radius: 50%;
     border: 1px solid darkgrey;
     opacity: 0.5;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+}
+
+.carousel .markers span:hover {
+    opacity: 0.8;
 }
 
 
